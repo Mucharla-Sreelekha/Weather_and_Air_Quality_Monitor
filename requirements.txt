@@ -1,0 +1,13 @@
+Install the latest versions of :-
+
+1. Flask
+2. SQLAlchemy
+3. flask_jwt_extended 
+4. flask_bcrypt
+5. flask_dance.contrib.google 
+6. requests
+7. flask_admin 
+8. flask_mail 
+9. flask_login
+10. flask_moment
+11. flask_cli
