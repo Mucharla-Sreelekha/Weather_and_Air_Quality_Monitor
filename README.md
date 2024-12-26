@@ -73,28 +73,34 @@ Installation and Setup
 *Screenshots*
 
 **Weather & Environment Dashboard**
-![Weather Dashboard](https://github.com/user-attachments/assets/c22716b5-4a56-4a0d-a132-5776d0ac11a1)
+![Weather Dashboard](https://github.com/user-attachments/assets/b5226369-bd90-481e-9bf8-318eeb293787)
+
 
 **Latest News Articles**
-![Latest News](https://github.com/user-attachments/assets/574436b4-2985-4c98-ac27-549edfb7835b)
+![Latest News](https://github.com/user-attachments/assets/a897b0dd-ff56-48bb-8b9a-1180c1d850c5)
+
 
 **Charts**
-![Charts](https://github.com/user-attachments/assets/f8a6728a-3e34-4640-bbfd-fe8c7afd7290)
+![Charts](https://github.com/user-attachments/assets/0361d6a2-f0e4-4248-ad39-f50bc0781df5)
 
 **Login Page**
-![Login Page](https://github.com/user-attachments/assets/39b8d301-8a87-4ffc-9eff-13cffcec174d)
+![Login Page](https://github.com/user-attachments/assets/c96fb4b2-e893-4b14-8766-75c0333a11c6)
+
 
 **Register Page**
-![Register Page](https://github.com/user-attachments/assets/59bd7e82-1c2d-4128-83e2-1a099ca88856)
+![Register Page](https://github.com/user-attachments/assets/8447d945-87c6-4a51-9e00-07112670306a)
+
 
 **Carbon Tracking Interface**
-![Carbon Tracking](https://github.com/user-attachments/assets/d3416e36-73c7-47d9-92b6-7a2aec92015a)
+![Carbon Tracking](https://github.com/user-attachments/assets/639dcc26-1c6f-473e-9643-5ab0d80d2613)
+
 
 **Leader Board**
-![Leaderboard](https://github.com/user-attachments/assets/2444a382-9401-4ccf-a217-18186af81193)
+![Leaderboard](https://github.com/user-attachments/assets/7ab3e48b-3f09-4680-bf54-126263f8c13e)
+
 
 **Community Platform**
-![Community Platform](https://github.com/user-attachments/assets/a782846f-c055-445d-be4b-98b5b24d00b5)
+![Community Platform](https://github.com/user-attachments/assets/78cb5289-c7be-4ddb-83fb-ec4d4b0174d0)
 
 
 
