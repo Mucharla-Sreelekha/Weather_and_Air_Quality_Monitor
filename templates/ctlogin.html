@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        
+        body{
+                background-image: url('{{ url_for('static', filename='bg.jpg') }}');
+                background-repeat: repeat;
+                background-size: tile;
+                background-position: center;
+                background-attachment: fixed;
+        } 
+        
+        /* Style for error messages */
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none; /* Initially hidden */
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-group input:invalid {
+            border-color: red;
+        }
+
+        .btn {
+            background-color: rgb(0,0,255);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: white;
+            background-color:rgb(0,0,255);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .google-logo {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+    <script>
+        function validateForm(event) {
+            let valid = true;
+
+            // Select all inputs in the form
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+
+            // Select associated error spans
+            const emailError = document.getElementById('email-error');
+            const passwordError = document.getElementById('password-error');
+
+            // Validate email
+            if (!email.value.trim()) {
+                emailError.textContent = 'Email is required.';
+                emailError.style.display = 'block';
+                valid = false;
+            } else {
+                emailError.style.display = 'none';
+            }
+
+            // Validate password
+            if (!password.value.trim()) {
+                passwordError.textContent = 'Password is required.';
+                passwordError.style.display = 'block';
+                valid = false;
+            } else {
+                passwordError.style.display = 'none';
+            }
+
+            // Prevent form submission if invalid
+            if (!valid) event.preventDefault();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="/ctlogin" method="POST" onsubmit="validateForm(event)">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <span id="email-error" class="error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <span id="password-error" class="error"></span>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="/register" style="color: rgb(0,0,255); text-decoration:None;">Register</a></p>
+            <a href="{{ url_for('google.login') }}" class="google-btn">
+                <img src="{{ url_for('static', filename='google.png') }}" alt="Google Logo" class="google-logo">
+                Login with Google
+            </a>
+        </div>
+    </div>
+</body>
+</html>
