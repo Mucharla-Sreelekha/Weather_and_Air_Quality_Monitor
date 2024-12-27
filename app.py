@@ -16,6 +16,10 @@ from sqlalchemy import or_
 import click
 from flask_moment import Moment
 from flask_cli import with_appcontext
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -24,8 +28,8 @@ app.config["JWT_COOKIE_CSRF_PROTECT"] = False
 moment = Moment(app)
 app.config["JWT_ACCESS_COOKIE_NAME"] = "access_token_cookie"
 
-API_KEY = "5f6c9d7e7f16f04d6b55942614817b69"
-YOUTUBE_API_KEY = 'AIzaSyAmXWhLn-6rBUjQzgpxo79onTS11iOZMDM'
+API_KEY = os.getenv("API_KEY")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 # Initialize Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
