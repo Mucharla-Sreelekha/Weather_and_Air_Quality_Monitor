@@ -12,3 +12,4 @@ flask_cli
 flask_sqlalchemy
 python-dotenv
 pymysql
+gunicorn
