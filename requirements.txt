@@ -9,3 +9,4 @@ flask_mail
 flask_login
 flask_moment
 flask_cli
+flask_sqlalchemy
