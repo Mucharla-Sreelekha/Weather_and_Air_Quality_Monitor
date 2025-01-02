@@ -10,3 +10,4 @@ flask_login
 flask_moment
 flask_cli
 flask_sqlalchemy
+python-dotenv
