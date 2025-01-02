@@ -72,6 +72,72 @@
             color: #1abc9c;
             cursor: pointer;
         }
+        /* Responsive Design for Carbon Tracking */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+                flex-direction: column;
+            }
+        
+            .carbon-stats, .carbon-chart, .carbon-input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        
+            .chart-container {
+                height: 300px;
+            }
+        
+            .input-section {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            .input-group {
+                width: 100%;
+            }
+        
+            .btn-primary {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+        
+            .section-title {
+                font-size: 18px;
+            }
+        
+            .carbon-stat-value {
+                font-size: 24px;
+            }
+        }
+        
+        /* Fluid Typography */
+        html {
+            font-size: calc(14px + 0.5vw);
+        }
+        
+        /* Responsive Media */
+        img, canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Touch-friendly Adjustments */
+        @media (pointer: coarse) {
+            .btn, .form-control {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
     </style>
 </head>
