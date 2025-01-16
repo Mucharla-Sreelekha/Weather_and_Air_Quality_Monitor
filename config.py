@@ -4,7 +4,7 @@ load_dotenv()
 
 class Config:
     SECRET_KEY = 'your_secret_key'
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://sql12758000:sX7ayFH9R8@sql12.freesqldatabase.com/sql12758000'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://if0_38119649:vRFGIgSGlGg8xH4@sql101.infinityfree.com/if0_38119649_infosys'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     GOOGLE_OAUTH_CLIENT_ID = '541441980761-tmhlqs9pt59a43vicec0lc9o7j09rtsl.apps.googleusercontent.com'
